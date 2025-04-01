@@ -45,7 +45,7 @@ h1 {
 
 /* Add a class for the selected button without scaling */
 .choice.selected {
-    background-color: #4CAF50; /* Green when selected */
+    background-color: #8CCDB0; /* Green when selected */
     color: white;  /* White text on selected button */
 }
 
@@ -58,7 +58,7 @@ h1 {
 
 .btn {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #8CCDB0;
     color: white;
     border: none;
     border-radius: 5px;
@@ -67,5 +67,5 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #8CCDB0;
 }
