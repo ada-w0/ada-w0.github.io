@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>What's the Best Way For You to Save Energy?</h1>
+
+    <div id="question1" class="question">
+        <p>What percentage of your lights, would you estimate, are LEDs?</p>
+        <div class="choices">
+            <button class="choice" data-result="0" data-points="2"> 0-20% </button>
+            <button class="choice" data-result="0" data-points="1"> 20-40% </button>
+            <button class="choice" data-result="0" data-points="0"> 40-60% </button>
+            <button class="choice" data-result="0" data-points="0"> 60-80% </button>
+            <button class="choice" data-result="0" data-points="0"> Greater than 80% </button> <!-- Some answers should not contribute. Only <40% to LEDs; others, none -->
+        </div>
+    </div>
+
+    <div id="question2" class="question">
+        <p>Do you currently have solar panels installed, and how sunny is it in your area?</p>
+        <div class="choices">
+            <button class="choice" data-result="1" data-points="0"> Yes; very sunny! (yeah sure you live in Washington) </button>
+            <button class="choice" data-result="1" data-points="0"> Yes; not very sunny </button>
+            <button class="choice" data-result="1" data-points="2"> No; very sunny </button>
+            <button class="choice" data-result="1" data-points="1"> No; not very sunny </button>
+            <!-- <button class="choice" data-result="4">Answer 5</button> --> <!-- Answer 3 contributes 2 pts; 4, 1 -->
+        </div>
+    </div>
+
+    <div id="question3" class="question">
+        <p>What temperature range is your thermostat usually set to?</p>
+        <div class="choices">
+            <button class="choice" data-result="2" data-points="0"> 45-55 deg </button>
+            <button class="choice" data-result="2" data-points="0"> 55-65 deg </button>
+            <button class="choice" data-result="2" data-points="1"> 65-75 deg </button>
+            <button class="choice" data-result="2" data-points="2"> Greater than 75 deg </button>
+            <button class="choice" data-result="2" data-points="0"> Other </button> <!-- 4, 2 pts; 3, 1  -->
+        </div>
+    </div>
+
+    <div id="question4" class="question">
+        <p>How well is your home insulated?</p>
+        <div class="choices">
+            <button class="choice" data-result="3" data-points="2"> Badly, barely any insulation </button>
+            <button class="choice" data-result="3" data-points="1"> Okay, some insulation but many leaks </button>
+            <button class="choice" data-result="3" data-points="0"> Well, few leaks </button>
+            <button class="choice" data-result="3" data-points="0"> Very well, almost no heat loss </button>
+            <button class="choice" data-result="3" data-points="0"> Don't know </button> <!-- 1, 2 pts; 2, 1  -->
+        </div>
+    </div>
+
+    <div id="question5" class="question">
+        <p>On average, how long are you and your family's showers?</p>
+        <div class="choices">
+            <button class="choice" data-result="4" data-points="0"> Less than 20 min </button>
+            <button class="choice" data-result="4" data-points="0"> 20-30 min </button>
+            <button class="choice" data-result="4" data-points="1"> 30-40 min </button>
+            <button class="choice" data-result="4" data-points="2"> 40-50 min </button>
+            <button class="choice" data-result="4" data-points="2"> Greater than 50 min </button> <!-- 4, 2 pts; 3, 1  -->
+        </div>
+    </div>
+    <!-- Add more questions here... -->
+
+    <button id="submit" class="btn">Submit Quiz</button>
+
+    <div id="result" class="result">
+        <p>Your result: <br><span id="resultText"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
