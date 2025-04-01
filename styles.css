@@ -1,21 +1,27 @@
+/* Apply Merriweather Regular font to the entire body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Merriweather", serif;
+    font-weight: 400; /* Regular weight */
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
+/* Container for all content */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Styling for main header */
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
+/* Styling for questions */
 .question {
     margin-bottom: 20px;
     padding: 10px;
@@ -24,11 +30,13 @@ h1 {
     border-radius: 5px;
 }
 
+/* Choices section for buttons */
 .choices {
     display: flex;
     flex-direction: column;
 }
 
+/* Styling for each choice button */
 .choice {
     padding: 10px;
     margin: 5px 0;
@@ -37,25 +45,32 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: "Merriweather", serif;
+    font-weight: 400; /* Regular weight */
 }
 
+/* Hover effect for buttons */
 .choice:hover {
     background-color: #ddd;
 }
 
-/* Add a class for the selected button without scaling */
+/* Selected button state */
 .choice.selected {
     background-color: #8CCDB0; /* Green when selected */
     color: white;  /* White text on selected button */
 }
 
+/* Result section */
 .result {
     display: none;
     text-align: center;
     margin-top: 30px;
     font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 400; /* Regular weight */
 }
 
+/* Button styles */
 .btn {
     padding: 10px 20px;
     background-color: #8CCDB0;
@@ -64,8 +79,11 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: 400; /* Regular weight */
 }
 
+/* Button hover effect */
 .btn:hover {
-    background-color: #8CCDB0;
+    background-color: #7bbfa6; /* Slightly darker shade on hover */
 }
