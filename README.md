@@ -1,3 +1,1 @@
-used to be the url for my science project
-<br>
-currently wip for my personal website!
+science impact proj for trimester 2- buildings and energy
