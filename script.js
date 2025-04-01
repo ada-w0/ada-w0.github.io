@@ -26,9 +26,11 @@ questions.forEach((question, questionIndex) => {
 });
 
 document.getElementById('submit').addEventListener('click', function() {
+    // Find the result with the maximum points
     let maxResult = Math.max(...results);
     let maxIndex = results.indexOf(maxResult);
 
+    // Result text based on which result category has the most points
     let resultText = '';
     switch (maxIndex) {
         case 0:
@@ -50,6 +52,10 @@ document.getElementById('submit').addEventListener('click', function() {
             resultText = "Unknown result";
     }
 
+    // Display the result
     document.getElementById('resultText').innerText = resultText;
     document.getElementById('result').style.display = 'block';
+
+    // Scroll to the result section after displaying the result
+    document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
